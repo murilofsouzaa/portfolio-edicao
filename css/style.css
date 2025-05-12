@@ -9,11 +9,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+#arrow-up.fixed-arrow{
+    rotate: 180deg;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+#arrow-up.fixed-arrow:hover{
+    transform: translateY(10px);
+}
+
 /* ======= Animações INICIO ======= */
 main{
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 22%;
 }
 /* ======= Animações Fim ======= */
 /* ======= HEADER INICIO ======= */
@@ -44,7 +55,7 @@ main{
     font-size: 30px;
     cursor: pointer;
 }
-#arrow-down{
+#arrow-down, #arrow-up{
     border: 2px solid rgba(53, 53, 53, 0.404);
     border-radius: 100%; 
     width: 4em; 
@@ -52,7 +63,7 @@ main{
     display: flex; justify-content: center; align-items: center;
     transition: 0.5s ease;
 }
-a .d-inline-flex:hover, #arrow-down:hover{
+a .d-inline-flex:hover, #arrow-down:hover, #arrow-up:hover{
     transform: scale(0.8);
     border: 2px solid black;
 }
@@ -100,18 +111,8 @@ div .d-inline-flex:hover #arrow-down img{
     width: 140px;
     margin-top: 40px;
 }
-
-#icon-workshop-tools .d-flex:nth-child(1):hover img{
-    filter: invert(23%) sepia(93%) saturate(6030%) hue-rotate(245deg) brightness(80%) contrast(98%);
-}
-#icon-workshop-tools .d-flex:nth-child(2):hover img{
-    filter: invert(23%) sepia(93%) saturate(6030%) hue-rotate(200deg) brightness(90%) contrast(98%);
-}
-#icon-workshop-tools .d-flex:nth-child(4):hover img{
-    filter: invert(23%) sepia(93%) saturate(6030%) hue-rotate(290deg) brightness(100%) contrast(98%);
-}
 /* == PROJETOS ==*/
-/*Section de Projetos*/
+
 #works{
     margin-top: 300px;
 }
