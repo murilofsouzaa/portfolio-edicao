@@ -10,11 +10,3 @@
     }
 }
 
-@keyframes drawCircle {
-    0% {
-        background-image: conic-gradient(rgba(53, 53, 53, 0.562) 0deg 0deg);
-    }
-    100% {
-        background-image: conic-gradient(rgb(0, 0, 0) 0deg 360deg);
-    }
-}

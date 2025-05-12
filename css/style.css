@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+@import url(/css/keyframes.css);
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/* ======= Animações INICIO ======= */
+main{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+/* ======= Animações Fim ======= */
 /* ======= HEADER INICIO ======= */
 #header-ul li{
     list-style: none;
@@ -31,14 +39,12 @@
     font-weight: 400;
     line-height: 150%;
 }
-#circle{
-    font-size: 55px;
-}
+
 #switchDark{
     font-size: 30px;
     cursor: pointer;
 }
-#arrow-down-read-more{
+#arrow-down{
     border: 2px solid rgba(53, 53, 53, 0.404);
     border-radius: 100%; 
     width: 4em; 
@@ -46,24 +52,19 @@
     display: flex; justify-content: center; align-items: center;
     transition: 0.5s ease;
 }
-a .d-inline-flex:hover, #arrow-down-read-more:hover{
+a .d-inline-flex:hover, #arrow-down:hover{
     transform: scale(0.8);
     border: 2px solid black;
 }
-#arrow-down-read-more img{
+#arrow-down img{
     transition: 0.2s ease;
 }
-div .d-inline-flex:hover #arrow-down-read-more img{
+div .d-inline-flex:hover #arrow-down img{
     transform: translateY(10px);
 }
 /* ======= HEADER FIM ======= */
 
 /* ======= MAIN INICIO ======= */
-main{
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
 /*== HOME ==*/
 #home{
     margin-bottom: 256px;
@@ -76,7 +77,7 @@ main{
     width: 580px;
     letter-spacing: 1px;
     line-height: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 3%;
     font-family: 'Outfit';
 }
@@ -88,12 +89,32 @@ main{
     font-family: sans-serif;
     color: rgba(0, 0, 0, 0.733);
 }
+#icon-workshop-tools .d-flex{
+    align-items: center;
+}
+#icon-workshop-tools .d-flex h3{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#icon-workshop-tools .d-flex img{
+    width: 140px;
+    margin-top: 40px;
+}
+
+#icon-workshop-tools .d-flex:nth-child(1):hover img{
+    filter: invert(23%) sepia(93%) saturate(6030%) hue-rotate(245deg) brightness(80%) contrast(98%);
+}
+#icon-workshop-tools .d-flex:nth-child(2):hover img{
+    filter: invert(23%) sepia(93%) saturate(6030%) hue-rotate(200deg) brightness(90%) contrast(98%);
+}
+#icon-workshop-tools .d-flex:nth-child(4):hover img{
+    filter: invert(23%) sepia(93%) saturate(6030%) hue-rotate(290deg) brightness(100%) contrast(98%);
+}
 /* == PROJETOS ==*/
 /*Section de Projetos*/
 #works{
     margin-top: 300px;
 }
-
 /*Section de Imagens*/
 #works .col-6 h2:first-child{
     font-size: 200px;
