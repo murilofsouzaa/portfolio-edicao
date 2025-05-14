@@ -83,6 +83,9 @@ div .d-inline-flex:hover #arrow-down img{
 #home h2.fw-bold{
     font-size: 66px;
 }  
+#home p.mt-5{
+    font-size: 24px;
+}
 #about-me h2{
     font-size: 46px;
     width: 580px;
@@ -181,3 +184,335 @@ a > .fab, a > .fa-brands {
 }
 
 /* ======= MAIN FIM ======= */
+
+
+/* ======= RESPONSIVIDADE ======= */
+
+@media (max-width: 576px){
+    header{
+        flex-direction: column;
+    }
+
+    header .title.d-flex{
+        justify-content: center;
+    }
+
+    header h1.fs-5 {
+        font-size: 40px !important;
+    }
+
+    #home div.col-6{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home h2.fw-bold{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #home .col-6 p.mt-5{
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    main{
+        animation: none;
+    }
+
+    div.col-12.col-lg-6{
+        margin: 0;
+        padding: 0;
+    }
+
+    #about-me h2{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #about-me .d-flex.flex-column.mx-0.mx-lg-5 h2{
+        width: 100%;
+    }
+
+    div.col-12 a {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about-me p {
+        width: 100%;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    #icon-workshop-tools{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #icon-workshop-tools .d-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #icon-workshop-tools .d-flex img {
+        width: 80px;
+        margin-top: 20px;
+    }
+
+    #icon-workshop-tools .d-flex h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    section#about-me.container div.row div.col-12 a{
+        display: none;
+    }
+
+    div#arrow-down.mt-3 img{
+        display: none;
+    }
+
+    #works {
+        margin-top: 100px;
+    }
+
+    #works .row {
+        flex-direction: column;
+    }
+
+    #works .col-6 {
+        width: 100%;
+    }
+
+    #works .col-6 h2 {
+        font-size: 60px !important;
+        text-align: center;
+    }
+
+    .images, .videos {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #images-section .row.p-5 {
+        padding: 20px !important;
+    }
+
+    #videos-section .row.rounded-1 {
+        padding: 20px;
+    }
+
+    .videos.col-6{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videos iframe {
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    #contact-section {
+        margin-top: 100px;
+        padding: 60px 20px;
+    }
+
+    #contact-section .row {
+        flex-direction: column;
+    }
+
+    #contact-section .col-6 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    a > .fab, a > .fa-brands {
+        font-size: 40px;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+/* Breakpoint para tablets */
+@media (min-width: 577px) and (max-width: 991px) {
+    #home div.col-6 {
+        width: 100%;
+    }
+    
+    #home h2.fw-bold {
+        font-size: 44px;
+    }
+    
+    #about-me h2 {
+        width: 100%;
+        font-size: 38px;
+    }
+    
+    #about-me p {
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    #icon-workshop-tools .d-flex img {
+        width: 100px;
+    }
+    
+    #works {
+        margin-top: 150px;
+    }
+    
+    #works .col-6 h2:first-child {
+        font-size: 100px;
+    }
+    
+    .images, .videos {
+        width: 100%;
+    }
+    
+    #images-section .row.p-5 {
+        padding: 30px !important;
+    }
+    
+    #videos-section .row.rounded-1 {
+        padding: 40px;
+    }
+    
+    .videos iframe {
+        width: 100%;
+        height: 250px;
+        margin: 10px 0 10px 0;
+    }
+    
+    #contact-section {
+        margin-top: 150px;
+        padding: 100px 40px;
+    }
+}
+
+/* Ajustes específicos para dispositivos médios */
+@media (max-width: 991px) {
+    #home .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    #home .col-md-6 {
+        margin-bottom: 40px;
+    }
+    
+    #works .row {
+        flex-direction: column;
+    }
+    
+    #works .col-6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    #images-section .row,
+    #videos-section .row {
+        flex-direction: column;
+    }
+    
+    #contact-section .row .col-6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    #contact-section .row .col-6:last-child > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contact-section input[type="text"] {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+    
+    #header-ul {
+        display: none !important; 
+    }
+    
+    .mobile-menu-active #header-ul {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    
+    #header-ul li {
+        margin: 15px 0;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 375px) {
+    header h1.fs-5 {
+        font-size: 30px !important;
+    }
+    
+    #home h2.fw-bold {
+        font-size: 28px;
+    }
+    
+    #about-me h2 {
+        font-size: 26px;
+    }
+    
+    #about-me p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    #works .col-6 h2:first-child {
+        font-size: 40px !important;
+    }
+    
+    .videos iframe {
+        height: 180px;
+    }
+    
+    #contact-section {
+        padding: 40px 15px;
+    }
+    
+    a > .fab, a > .fa-brands {
+        font-size: 32px;
+    }
+    
+    .social-links {
+        gap: 20px !important;
+    }
+}
