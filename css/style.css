@@ -116,12 +116,13 @@ div .d-inline-flex:hover #arrow-down img{
 #works{
     margin-top: 300px;
 }
-/*Section de Imagens*/
+
 #works .col-6 h2:first-child{
     font-size: 200px;
     font-family: 'Lexend';
     color: rgba(0, 0, 0, 0.055);
 }
+/*Section de Imagens*/
 .images{
     width: 500px;
     height: 600px;
@@ -133,6 +134,44 @@ div .d-inline-flex:hover #arrow-down img{
 #images-section .row.p-5{
     margin-top: 52px;
     background-color: #f0f0f071;
+}
+
+#images-section{
+    margin-bottom: 256px;
+}
+/*Section de Videos*/
+
+ #videos-section .row.rounded-1{
+    padding: 80px;
+    background-color: #f0f0f071;
+
+ }
+.videos iframe{
+    margin: 16px 0px 0px 60px;
+}
+
+/*Section de Contato*/
+#contact-section{
+    margin-top: 256px;
+    width: 100%;
+    padding: 200px;
+}
+
+a > .fab{
+    font-size: 62px;
+}
+.social-links .fab.fa-linkedin,.social-links .fab.fa-github{
+    transition: 0.3s ease;
+} 
+
+.social-links .fab.fa-linkedin:hover{
+    transform: scale(1.06);
+    color: #0a66c2;
+}
+
+.social-links .fab.fa-github:hover{
+    transform: scale(1.2);
+    color:#24292e;
 }
 
 /* ======= MAIN FIM ======= */
