@@ -159,13 +159,16 @@
 
                 <section id="contact-section" class="bg-black text-white fs-4 d-flex flex-column">
                     <div class="row">
-                        <div class="col-6 d-flex justify-content-center">
+                        <div class="col-6 d-flex justify-content-center ">
                                 <div class="social-links d-flex gap-5">
                                     <a href="https://www.linkedin.com/in/murilo-freitas-de-souza-67a01b2bb/" target="_blank">
                                         <i class="fab fa-linkedin"></i>
                                     </a>
                                     <a href="https://github.com/murilofsouzaa" target="_blank">
                                         <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/murilofsouza_/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </div>
                             </div>
@@ -178,6 +181,9 @@
                                     <div class="">
                                         <i class="fas fa-envelope"></i>
                                         <span>onemurilo@gmail.com</span>
+                                    </div>
+                                    <div>
+                                        <input type="text" name="" id="" style="width: 40%;" class="rounded-1 mt-3 text-black fs-6">
                                     </div>
                                 </div>
                             </div>
@@ -199,3 +205,22 @@
 
 <script src=/js/app.js></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" ...></script>
+
+<script>
+    const contactSection = document.querySelector("#contact-section");
+    const arrowUp = document.querySelector("#arrow-up");
+
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            arrowUp.style.filter = "invert(100%)";
+        } else {
+            arrowUp.style.filter = "invert(0%)";
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+observer.observe(contactSection);
+</script>

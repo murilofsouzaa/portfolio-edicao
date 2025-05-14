@@ -157,12 +157,11 @@ div .d-inline-flex:hover #arrow-down img{
     padding: 200px;
 }
 
-a > .fab{
+a > .fab, a > .fa-brands {
     font-size: 62px;
-}
-.social-links .fab.fa-linkedin,.social-links .fab.fa-github{
     transition: 0.3s ease;
-} 
+
+}
 
 .social-links .fab.fa-linkedin:hover{
     transform: scale(1.06);
@@ -172,6 +171,13 @@ a > .fab{
 .social-links .fab.fa-github:hover{
     transform: scale(1.2);
     color:#24292e;
+}
+
+.social-links .fa-instagram:hover {
+  background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.2);
 }
 
 /* ======= MAIN FIM ======= */
